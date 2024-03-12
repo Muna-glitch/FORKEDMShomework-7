@@ -6,28 +6,22 @@ use app\models\Post;
 
 class MainController extends Controller
 {
-
+    protected $twig;
     public function homepage()
     {
         $template = $this->twig->load('main/homepage.twig');
         $homepageData = [
-            'title' => 'Homepage Title',
+            'title' => "Jack Forester's Homepage",
         ];
 
         echo $template->render($homepageData);
     }
 
     public function notFound() {
-        //todo create a 404 twig template in app/public/assets/views
-        //an example is in app/controllers/UsersController
-     
-        //and return it from this method
 
-              $template = $this->twig->load('notFound/notFound.twig');
-               http_response_code(404);
-                  echo $template->render(); 
+        $template = $this->twig->load('notFound/notFound.twig');
+        http_response_code(404);
+        echo $template->render(); 
 
-    
-    }
-
+    }   
 }

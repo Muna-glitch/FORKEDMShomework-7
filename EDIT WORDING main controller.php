@@ -1,3 +1,5 @@
+<?php
+
 namespace app\controllers;
 use app\core\Controller;
 use app\models\Post;
@@ -7,9 +9,9 @@ class MainController extends Controller
     protected $twig;
     public function homepage()
     {
-        $template = $this->twig->load('main/website.twig');
+        $template = $this->twig->load('main/homepage.twig');
         $homepageData = [
-            'title' => “Muna “Saed’s Website,
+            'title' => "Jack Forester's Homepage",
         ];
 
         echo $template->render($homepageData);
@@ -23,3 +25,5 @@ class MainController extends Controller
 
     }   
 }
+
+?>

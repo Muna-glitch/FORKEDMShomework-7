@@ -1,0 +1,14 @@
+What are some examples of how PHP and JavaScript are alike and how they differ?
+2). 
+Both PHP and JavaScript are interpreted scripting/programming languages. This means code is executed directly without prior compilation without it having it translated into machine code, this means it is not as fast as languages like c++. 
+Despite this, PHP and JS are still important because in wed dev they can be used with HTML while c++ cannot. 
+PHP: used for server-side scripting, handling tasks like server request processing and interacting with databases. 
+JavaScript: runs in the user's browser and can modify the HTML and CSS of a webpage.
+
+  3. Define MVC, what are the responsibilities of each piece?
+MVC stands for Model-View-Controller.
+  Model: representation. it is responsible for managing and representing and communicating the data and state of the application.
+  View: Displays the data to the user in a way that can be understtod and interacted usually using HTML, CSS, and sometimes JavaScript.
+  Controller: processing between model and the view. Receives user inputs from the interface (ex. clicks, form submissions). Processes user requests, looks over the 
+  flow of data between the Model and the View.
+
